@@ -11,7 +11,7 @@ const models=require("./models/db")
 const PORT=process.env.PORT||3000;
 app.use(bodyParser.json());
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://frontend-auth-app-rho.vercel.app",
     credentials:true,
 }));
 app.use("/auth",AuthRouter);
